@@ -1,21 +1,10 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Unique portfolio solution for creatives">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
-    <title>Daniel van der Woude &#8211; Technology Ethousiast &#8211; About</title>
+import React from 'react';
+import './assets/css/style.css';
 
-    <link href="https://fonts.googleapis.com/css?family=Hind:300,400%7CMontserrat:400,700" rel="stylesheet" media="all">
-    <link rel='stylesheet' href='css/icons.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='css/main.css' type='text/css' media='all'/>
-    <link rel='stylesheet' href='css/setting.css' type='text/css' media='all'/>
-
-</head>
-
+const AboutPage = () => {
+    return (
+        <div>
 <!--Preloader-->
 <div class="atail-preloader-wrapper">
     <span>
@@ -40,7 +29,7 @@
             <div class="logo">
                 <a href="index.html">
                     <span class="atail-text-logo">
-                        <img src="img/svg/DW_logo_gray.svg" alt="daniellogo">
+                        <img src="assets/img/svg/DW_logo_gray.svg" alt="daniellogo">
                     </span>
                 </a>
             </div>
@@ -78,7 +67,7 @@
         <div class="main-scroll">
 
             <figure class="figure-extended ">
-                <img src="img/about/stock-photo-amsterdam.jpg"
+                <img src="assets/img/about/stock-photo-amsterdam.jpg"
                      alt="Amsterdam">
                 <h1>
                     Based in: <br>阿姆斯特丹<br> Amsterdam</h1>
@@ -171,10 +160,15 @@
 
 </div> <!-- atail -->
 
-<script type='text/javascript' src="js/jquery-3.1.1.min.js"></script>
-<script type='text/javascript' src='js/main.js'></script>
-<script type='text/javascript' src='js/jssocials.js'></script>
-<script type='text/javascript' src='js/retina.js'></script>
+<script type='text/javascript' src="assets/js/jquery-3.1.1.min.js"></script>
+<script type='text/javascript' src='assets/js/main.js'></script>
+<script type='text/javascript' src='assets/js/jssocials.js'></script>
+<script type='text/javascript' src='assets/js/retina.js'></script>
 
 </body>
 </html>
+        </div>
+    );
+}
+
+export default AboutPage;
